@@ -7,8 +7,8 @@ Data Structures in C++ using MFC
 Stack
 ===============
 
-Simple No Circular Normal
-Simple No Circular Inverse
+1. Simple No Circular Normal
+2. Simple No Circular Inverse
 Simple Circular Normal
 Simple Circular Inverse
 Double No Circular Normal
