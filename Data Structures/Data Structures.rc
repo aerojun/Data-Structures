@@ -1,11 +1,11 @@
-//Script de recursos generado en Microsoft Visual C++.
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
 //
-// Generado a partir del recurso TEXTINCLUDE 2.
+// Generated from the TEXTINCLUDE 2 resource.
 //
 #ifndef APSTUDIO_INVOKED
 #include "targetver.h"
@@ -16,19 +16,25 @@
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
 
-#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+// Español (España, alfabetización internacional) resources
 
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE
+1 TEXTINCLUDE 
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE
+2 TEXTINCLUDE 
 BEGIN
     "#ifndef APSTUDIO_INVOKED\r\n"
     "#include ""targetver.h""\r\n"
@@ -38,7 +44,7 @@ BEGIN
     "\0"
 END
 
-3 TEXTINCLUDE
+3 TEXTINCLUDE 
 BEGIN
     "#define _AFX_NO_OLE_RESOURCES\r\n"
     "#define _AFX_NO_TRACKER_RESOURCES\r\n"
@@ -57,86 +63,69 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Icono
+// Icon
 //
 
-// Icono con el valor de id. menor colocado en primer lugar para garantizar que el icono de la aplicación
-// es el mismo en todos los sistemas.
-
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
-LANGUAGE 10, 3
-IDR_MAINFRAME           ICON         "res\\Data Structures.ico"
-IDR_DataStructuresTYPE         ICON         "res\\Data StructuresDoc.ico"
-#endif
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
-LANGUAGE 10, 3
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Data Structures.ico"
+IDR_DataStructuresTYPE  ICON                    "res\\Data StructuresDoc.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Menú
+// Menu
 //
 
 IDR_MAINFRAME MENU
 BEGIN
     POPUP "&Archivo"
     BEGIN
-        MENUITEM "&Nuevo\tCtrl+N",                ID_FILE_NEW
-        MENUITEM "&Abrir...\tCtrl+O",            ID_FILE_OPEN
-        MENUITEM "&Guardar\tCtrl+S",               ID_FILE_SAVE
-        MENUITEM "Guardar &como...",                 ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "&Salir",                       ID_APP_EXIT
+        MENUITEM "&Salir",                      ID_APP_EXIT
     END
-    POPUP "&Edición"
-    BEGIN
-        MENUITEM "&Deshacer\tCtrl+Z",               ID_EDIT_UNDO
-        MENUITEM SEPARATOR
-        MENUITEM "Cor&tar\tCtrl+X",                ID_EDIT_CUT
-        MENUITEM "&Copiar\tCtrl+C",               ID_EDIT_COPY
-        MENUITEM "&Pegar\tCtrl+V",              ID_EDIT_PASTE
-    END
+    MENUITEM "Pilas",                       0
+    MENUITEM "Colas",                       0
+    MENUITEM "Listas",                      0
+    MENUITEM "Arboles",                     0
     POPUP "Ay&uda"
     BEGIN
-        MENUITEM "&Acerca de Data Structures...",          ID_APP_ABOUT
+        MENUITEM "&Acerca de Data Structures...", ID_APP_ABOUT
     END
 END
 
 
-
 /////////////////////////////////////////////////////////////////////////////
 //
-// Acelerador
+// Accelerator
 //
 
 IDR_MAINFRAME ACCELERATORS
 BEGIN
-    "N",            ID_FILE_NEW,            VIRTKEY,CONTROL
-    "O",            ID_FILE_OPEN,           VIRTKEY,CONTROL
-    "S",            ID_FILE_SAVE,           VIRTKEY,CONTROL
-	"Z",            ID_EDIT_UNDO,           VIRTKEY,CONTROL
-	"X",            ID_EDIT_CUT,            VIRTKEY,CONTROL
-	"C",            ID_EDIT_COPY,           VIRTKEY,CONTROL
-	"V",            ID_EDIT_PASTE,          VIRTKEY,CONTROL
-    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY,ALT
-    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY,SHIFT
-    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY,CONTROL
-    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY,SHIFT
-    VK_F6,          ID_NEXT_PANE,           VIRTKEY
-    VK_F6,          ID_PREV_PANE,           VIRTKEY,SHIFT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
 END
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Cuadro de diálogo
+// Dialog
 //
 
 IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Acerca de Data Structures"
-FONT 8, "MS Shell Dlg"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
     LTEXT           "Data Structures, versión 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
@@ -145,24 +134,23 @@ BEGIN
 END
 
 
-
 /////////////////////////////////////////////////////////////////////////////
 //
-// Versión
+// Version
 //
 
-VS_VERSION_INFO     VERSIONINFO
-  FILEVERSION       1,0,0,1
-  PRODUCTVERSION    1,0,0,1
- FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
- FILEFLAGS VS_FF_DEBUG
+ FILEFLAGS 0x1L
 #else
  FILEFLAGS 0x0L
 #endif
- FILEOS VOS_NT_WINDOWS32
- FILETYPE VFT_APP
- FILESUBTYPE VFT2_UNKNOWN
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
@@ -170,19 +158,20 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "TODO: <Nombre de la compañía>"
             VALUE "FileDescription", "Data Structures"
-            VALUE "FileVersion",     "1.0.0.1"
-            VALUE "InternalName",    "Data Structures.exe"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Data Structures.exe"
             VALUE "LegalCopyright", "TODO: (c) <Nombre de la compañía>.  Reservados todos los derechos."
-            VALUE "OriginalFilename","Data Structures.exe"
+            VALUE "OriginalFilename", "Data Structures.exe"
             VALUE "ProductName", "TODO: <Nombre del producto>"
-            VALUE "ProductVersion",  "1.0.0.1"
+            VALUE "ProductVersion", "1.0.0.1"
         END
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x0c0a, 1200
+        VALUE "Translation", 0xc0a, 1200
     END
 END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -202,22 +191,23 @@ BEGIN
 END
 #endif    // APSTUDIO_INVOKED
 
+
 /////////////////////////////////////////////////////////////////////////////
 //
-// Tabla de cadenas
+// String Table
 //
 
 STRINGTABLE
 BEGIN
-// Las aplicaciones de destino distinto de mac quitan las dos subcadenas adicionales
     IDR_MAINFRAME           "Data Structures\n\nData Structures\n\n\nDataStructures.Document\nData Structures.Document"
-
 END
+
 STRINGTABLE
 BEGIN
     AFX_IDS_APP_TITLE       "Data Structures"
     AFX_IDS_IDLEMESSAGE     "Listo"
 END
+
 STRINGTABLE
 BEGIN
     ID_INDICATOR_EXT        "EXT"
@@ -227,6 +217,7 @@ BEGIN
     ID_INDICATOR_OVR        "OVR"
     ID_INDICATOR_REC        "REC"
 END
+
 STRINGTABLE
 BEGIN
     ID_FILE_NEW             "Crear un documento nuevo\nNuevo"
@@ -234,8 +225,16 @@ BEGIN
     ID_FILE_CLOSE           "Cerrar el documento activo\nCerrar"
     ID_FILE_SAVE            "Guardar el documento activo\nGuardar"
     ID_FILE_SAVE_AS         "Guardar el documento activo con un nombre nuevo\nGuardar como"
+END
+
+STRINGTABLE
+BEGIN
     ID_APP_ABOUT            "Mostrar información del programa, número de versión y copyright\nAcerca de"
     ID_APP_EXIT             "Salir de la aplicación; permite guardar documentos\nSalir"
+END
+
+STRINGTABLE
+BEGIN
     ID_FILE_MRU_FILE1       "Abrir este documento"
     ID_FILE_MRU_FILE2       "Abrir este documento"
     ID_FILE_MRU_FILE3       "Abrir este documento"
@@ -252,9 +251,21 @@ BEGIN
     ID_FILE_MRU_FILE14      "Abrir este documento"
     ID_FILE_MRU_FILE15      "Abrir este documento"
     ID_FILE_MRU_FILE16      "Abrir este documento"
+END
+
+STRINGTABLE
+BEGIN
     ID_NEXT_PANE            "Cambiar al siguiente panel de la ventana\nPanel siguiente"
     ID_PREV_PANE            "Cambiar al panel anterior de la ventana\nPanel anterior"
+END
+
+STRINGTABLE
+BEGIN
     ID_WINDOW_SPLIT         "Dividir la ventana activa en paneles\nDividir"
+END
+
+STRINGTABLE
+BEGIN
     ID_EDIT_CLEAR           "Borrar la selección\nBorrar"
     ID_EDIT_CLEAR_ALL       "Borrar todo\nBorrar todo"
     ID_EDIT_COPY            "Copiar la selección y la coloca en el Portapapeles\nCopiar"
@@ -277,26 +288,34 @@ BEGIN
     AFX_IDS_SCNEXTWINDOW    "Cambiar a la ventana de documento siguiente"
     AFX_IDS_SCPREVWINDOW    "Cambiar a la ventana de documento anterior"
     AFX_IDS_SCCLOSE         "Cerrar la ventana activa y preguntar si desea guardar los documentos"
+END
+
+STRINGTABLE
+BEGIN
     AFX_IDS_SCRESTORE       "Restaurar la ventana a su tamaño normal"
     AFX_IDS_SCTASKLIST      "Activar la Lista de tareas"
 END
 
+#endif    // Español (España, alfabetización internacional) resources
+/////////////////////////////////////////////////////////////////////////////
 
-#endif
+
 
 #ifndef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
 //
-// Generado a partir del recurso TEXTINCLUDE 3.
+// Generated from the TEXTINCLUDE 3 resource.
 //
-
 #define _AFX_NO_OLE_RESOURCES
 #define _AFX_NO_TRACKER_RESOURCES
 #define _AFX_NO_PROPERTY_RESOURCES
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
 LANGUAGE 10, 3
-#include "res\\DataStructures.rc2"  // Recursos editados que no son de Microsoft Visual C++
-#include "l.ESN\\afxres.rc"      // Componentes estándar
+#include "res\DataStructures.rc2"  // recursos editados que no son de Microsoft Visual C++
+#include "l.ESN\afxres.rc"      // Componentes estándar
 #endif
-#endif    // no APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
