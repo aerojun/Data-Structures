@@ -102,24 +102,38 @@
     <ClInclude Include="Data Structures.h" />
     <ClInclude Include="Data StructuresDoc.h" />
     <ClInclude Include="Data StructuresView.h" />
+    <ClInclude Include="DataDialog.h" />
+    <ClInclude Include="list.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="node.h" />
+    <ClInclude Include="queue.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="stack.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="threadedTree.h" />
+    <ClInclude Include="tree.h" />
     <ClInclude Include="treeNode.h" />
+    <ClInclude Include="treeStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Data Structures.cpp" />
     <ClCompile Include="Data StructuresDoc.cpp" />
     <ClCompile Include="Data StructuresView.cpp" />
+    <ClCompile Include="DataDialog.cpp" />
+    <ClCompile Include="list.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="node.cpp" />
+    <ClCompile Include="queue.cpp" />
+    <ClCompile Include="stack.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="threadedTree.cpp" />
+    <ClCompile Include="tree.cpp" />
     <ClCompile Include="treeNode.cpp" />
+    <ClCompile Include="treeStack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Data Structures.rc" />
@@ -134,4 +148,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Data Structures.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

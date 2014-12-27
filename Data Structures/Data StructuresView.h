@@ -3,6 +3,14 @@
 //
 
 #pragma once
+#include "DataDialog.h"
+
+//Structures
+#include "list.h"
+#include "stack.h"
+#include "queue.h"
+#include "tree.h"
+#include "threadedTree.h"
 
 
 class CDataStructuresView : public CView
@@ -37,6 +45,15 @@ protected:
 // Funciones de asignación de mensajes generadas
 protected:
 	DECLARE_MESSAGE_MAP()
+public:
+	DataDialog vDialog;
+	list vList;
+	stack vStack;
+	queue vQueue;
+	tree vTree;
+	threadedTree vTTree;
+
+
 };
 
 #ifndef _DEBUG  // Versión de depuración en Data StructuresView.cpp

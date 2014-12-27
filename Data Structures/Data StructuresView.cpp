@@ -46,7 +46,7 @@ BOOL CDataStructuresView::PreCreateWindow(CREATESTRUCT& cs)
 
 // Dibujo de CDataStructuresView
 
-void CDataStructuresView::OnDraw(CDC* /*pDC*/)
+void CDataStructuresView::OnDraw(CDC* pDC)
 {
 	CDataStructuresDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
@@ -54,6 +54,11 @@ void CDataStructuresView::OnDraw(CDC* /*pDC*/)
 		return;
 
 	// TODO: agregar aquí el código de dibujo para datos nativos
+
+	pDC->TextOutW(1100, 110, CString("PostOrden"));
+
+
+	pDC->SetGraphicsMode(1);
 }
 
 
