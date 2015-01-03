@@ -17,7 +17,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Español (España, alfabetización internacional) resources
+// Spanish (Spain, International Sort) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
 LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
@@ -83,10 +83,68 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "&Salir",                      ID_APP_EXIT
     END
-    MENUITEM "Pilas",                       0
-    MENUITEM "Colas",                       0
-    MENUITEM "Listas",                      0
-    MENUITEM "Arboles",                     0
+    POPUP "Stack"
+    BEGIN
+        POPUP "Simple Non Circular Normal"
+        BEGIN
+            MENUITEM "PUSH",                        ID_SIMPLENONCIRCULARNORMAL_PUSH
+            MENUITEM "POP",                         ID_SIMPLENONCIRCULARNORMAL_POP
+        END
+        POPUP "Simple Non Circular Inverse"
+        BEGIN
+            MENUITEM "PUSH",                        ID_SIMPLENONCIRCULARINVERSE_PUSH
+            MENUITEM "POP",                         ID_SIMPLENONCIRCULARINVERSE_POP
+        END
+        POPUP "Double Circular Normal"
+        BEGIN
+            MENUITEM "PUSH",                        ID_DOUBLECIRCULARNORMAL_PUSH
+            MENUITEM "POP",                         ID_DOUBLECIRCULARNORMAL_POP
+        END
+    END
+    POPUP "Queue"
+    BEGIN
+        POPUP "Simple Non Circular Normal without top"
+        BEGIN
+            MENUITEM "PUSH",                        ID_SIMPLENONCIRCULARNORMALWITHOUTTOP_PUSH
+            MENUITEM "POP",                         ID_SIMPLENONCIRCULARNORMALWITHOUTTOP_POP
+        END
+        POPUP "Simple Non Circular Normal with top"
+        BEGIN
+            MENUITEM "PUSH",                        ID_SIMPLENONCIRCULARNORMALWITHTOP_PUSH
+            MENUITEM "POP",                         ID_SIMPLENONCIRCULARNORMALWITHTOP_POP
+        END
+        POPUP "Double Circular Normal without top"
+        BEGIN
+            MENUITEM "PUSH",                        ID_DOUBLECIRCULARNORMALWITHOUTTOP_PUSH
+            MENUITEM "POP",                         ID_DOUBLECIRCULARNORMALWITHOUTTOP_POP
+        END
+    END
+    POPUP "List"
+    BEGIN
+        POPUP "Simple Non Circular Normal Descending Order"
+        BEGIN
+            MENUITEM "PUSH",                        ID_SIMPLEDESCENDANT_PUSH
+            MENUITEM "POP",                         ID_SIMPLEDESCENDANT_POP
+        END
+        POPUP "Double No Circular Normal Ascending Order"
+        BEGIN
+            MENUITEM "PUSH",                        ID_DOUBLEASCENDANT_PUSH
+            MENUITEM "POP",                         ID_DOUBLEASCENDANT_POP
+        END
+    END
+    POPUP "Tree"
+    BEGIN
+        POPUP "Binary"
+        BEGIN
+            MENUITEM "PUSH",                        ID_BINARY_PUSH
+            MENUITEM "POP",                         ID_BINARY_POP
+        END
+        POPUP "Threaded"
+        BEGIN
+            MENUITEM "PUSH",                        ID_THREADED_PUSH
+            MENUITEM "POP",                         ID_THREADED_POP
+        END
+    END
     POPUP "Ay&uda"
     BEGIN
         MENUITEM "&Acerca de Data Structures...", ID_APP_ABOUT
@@ -315,7 +373,7 @@ BEGIN
     AFX_IDS_SCTASKLIST      "Activar la Lista de tareas"
 END
 
-#endif    // Español (España, alfabetización internacional) resources
+#endif    // Spanish (Spain, International Sort) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
